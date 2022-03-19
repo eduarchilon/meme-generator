@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+NOMBRE DEL PROYECTO EN FIREBASE:
+
+meme-generator-eduar
+
+Si ya usas npm y un agrupador de módulos como Webpack o Rollup, puedes ejecutar el siguiente comando para instalar la versión más reciente del SDK:
+
+npm install firebase
+Luego, inicializa Firebase y comienza a usar los SDK de los productos que quieres usar.
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// initializaApp fue cambiado por firebase
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB-jk5tbCktwzf3DPH1dr7M5vZFuwW9V78",
+  authDomain: "meme-generator-eduar.firebaseapp.com",
+  projectId: "meme-generator-eduar",
+  storageBucket: "meme-generator-eduar.appspot.com",
+  messagingSenderId: "520495245977",
+  appId: "1:520495245977:web:bbbd86f0220105eb22a608",
+  measurementId: "G-LNZDKQ193C"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
