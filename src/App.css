@@ -170,9 +170,10 @@ button{
 
 #textSpan1, #textSpan2{
   z-index: 1111;
-  width: 100%;
+  width: 85%;
   position: absolute;
   word-break: break-all;
+  word-break: break-word;
 }
 
 #textSpan2{
